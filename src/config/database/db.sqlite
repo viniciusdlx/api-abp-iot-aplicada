@@ -1,0 +1,9 @@
+CREATE TABLE user (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  external_id VARCHAR(36) NULL,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  password TEXT NOT NULL,
+  biometry VARCHAR(255) NULL,
+  rfid VARCHAR(255) NULL
+);
