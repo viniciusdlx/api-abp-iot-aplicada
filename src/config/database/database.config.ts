@@ -5,7 +5,7 @@ dotenv.config();
 // desativar firewall (local)
 export const typeOrmConfig: TypeOrmModuleOptions = {
     type: 'sqlite',
-    database: '.db.sqlite',
+    database: './src/config/database/db.sqlite',
     // entities: [__dirname + '/../**/**/*.model.{js,ts}'],
     synchronize: true,
 };

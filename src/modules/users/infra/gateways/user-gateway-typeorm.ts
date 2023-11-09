@@ -13,7 +13,6 @@ export class UserGatewayTypeOrm implements IUserGateway {
     ) {}
 
     async create(user: Partial<User>): Promise<User> {
-        console.log('ta caindo aqui');
         return await this.userRepository.save(user);
     }
 
