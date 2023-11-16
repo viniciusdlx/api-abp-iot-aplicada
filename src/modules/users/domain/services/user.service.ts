@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { User } from '../../../../shared/entities/user.entity';
+import { User } from 'src/shared/entities/user.entity';
 import { CreateUserDto } from '../../presentation/dtos/create-user.dto';
 import { CreateUserUseCase } from '../use-cases/create-user.use-case';
 import { FindAllUsersUseCase } from '../use-cases/find-all-users.use-case';

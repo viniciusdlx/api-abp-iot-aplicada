@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
-    fs.readdir('./', (err, files) => {
+    fs.readdir('./src', (err, files) => {
         if (err) {
             console.error(err);
             return;
