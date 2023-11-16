@@ -6,7 +6,7 @@ dotenv.config();
 export const typeOrmConfig: TypeOrmModuleOptions = {
     type: 'sqlite',
     // database: `${__dirname}/db.sqlite`,
-    database: `./dist/config/database/db.sqlite`,
+    database: `db.sqlite`,
     // entities: [__dirname + '/../**/**/*.model.{js,ts}'],
     synchronize: true,
 };
