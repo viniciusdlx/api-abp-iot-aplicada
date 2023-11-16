@@ -1,4 +1,4 @@
-import { User } from 'src/shared/entities/user.entity';
+import { User } from '../../../../shared/entities/user.entity';
 
 export interface IUserGateway {
     create(user: Partial<User>): Promise<User>;

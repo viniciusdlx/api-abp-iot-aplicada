@@ -1,6 +1,6 @@
 import { Inject } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
-import { User } from 'src/shared/entities/user.entity';
+import { User } from '../../../../shared/entities/user.entity';
 import { IUserGateway } from '../../infra/interfaces/user-gateway.interface';
 import { CreateUserDto } from '../../presentation/dtos/create-user.dto';
 
