@@ -1,5 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import * as fs from 'fs';
+import { cwd } from 'process';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
@@ -10,8 +11,8 @@ async function bootstrap() {
         }
         console.log(files);
     });
-    console.log(__dirname);
-    console.log('./../db.sqlite');
+    console.log('cwd -> ', `${cwd()}/dist/db.sqlite`);
+    console.log('dirname -> ', `${__dirname}/db.sqlite`);
     const app = await NestFactory.create(AppModule);
 
     app.enableCors();
