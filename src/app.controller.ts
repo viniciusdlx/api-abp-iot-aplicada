@@ -4,6 +4,6 @@ import { Controller, Get } from '@nestjs/common';
 export class AppController {
     @Get()
     async welcome() {
-        return 'Welcome';
+        return 'Welcome to my world!';
     }
 }
