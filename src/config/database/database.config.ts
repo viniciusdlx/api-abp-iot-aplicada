@@ -8,7 +8,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
     database: `${__dirname}/db.sqlite`,
     // database: `${cwd()}/dist/db.sqlite`,
     // entities: [__dirname + '/../**/**/*.model.{js,ts}'],
-    synchronize: true,
+    synchronize: false,
 };
 
 export const ormConfig = typeOrmConfig;
